@@ -1,0 +1,20 @@
+<div class="card" style="height: 60vh; margin-top:50px; display:flex; align-items:center; justify-content:center;">
+  <form action="/notes/add" method="post" style="width: 80%;">
+    <div class="form-group" style="width: 100%;">
+      <label for="new_note_title">Title</label>
+      <input type="text" name= "title" class="form-control" id="new_note_title" placeholder="Title">
+    </div>
+
+    <div class="form-group" style="width: 100%; margin-top: 30px;">
+      <label for="newNote_description">Description</label>
+      <textarea name="description" class="form-control" id="newNote_description" rows="3" placeholder="Description"></textarea>
+    </div>
+
+    <div class="form-group" style="width: 100%; margin-top: 30px;"> 
+      <label for="newNote_link">Link / URL</label>
+      <input type="text" name= "link" class="form-control" id="newNote_link" placeholder="Link">
+    </div>
+
+    <button type="submit" class="btn btn-lg btn-primary" style="width: 100%; margin-top: 30px;">Create</button>
+  </form>
+</div>

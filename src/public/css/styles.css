@@ -1,0 +1,13 @@
+:root colors {
+    --bg-color: #13293D;
+    --main-color: #006494;
+    --accent-color: #247BA0;
+    --main-text-color: LightGoldenrodYellow;
+    --secondary-text-color: Lavender;
+};
+
+@media only screen and (max-width: 768px) {
+    #navbarColor02{
+        margin-top: 20px;
+    }
+}

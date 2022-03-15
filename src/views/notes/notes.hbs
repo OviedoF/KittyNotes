@@ -1,0 +1,31 @@
+<div class="row">
+    {{#each dbNotes}}
+        <div class="col-md-3">
+            <div class="card border-dark mb-3" style="max-width: 20rem; margin-top: 30px;">
+
+                <div class="card-header">
+                    {{title}}
+                    <a href="/notes/edit/{{_id}}" style="position: absolute; right: 10px;"><i class="fas fa-edit"></i> </a>
+                </div>
+
+                <div class="card-body">
+                    <h4 class="card-title">
+                        <a href={{link}} style="text-decoration: none;" target="_BLANK">Link</a>
+                    </h4>
+
+                    <p class="card-text">{{description}}</p>
+
+                    <form action="/notes/delete/{{_id}}" method="post" _method="DELETE" id="delete-form">
+                        <input type="hidden" name="_method" value="DELETE">
+
+                        <i class="fas fa-trash" style="position: absolute; bottom: 10px; right: 0px; cursor: pointer;">
+                            <button type="submit" style="width: 1px; height: 1px; background: transparent; border: none; overflow: hidden;">delete</button>
+                        </i>
+                        
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    {{/each}}
+</div>
